@@ -4,7 +4,7 @@
 
 **Autor: Ana Victoria Hernández Álvarez**
 
-**Fecha de la última versión: 1 de septiembre de 2026**
+**Fecha de la última versión: 8 de septiembre de 2026**
 
 **Repositorio: 
 https://github.com/veca-boop/Project.Ingenier-a-de-Software-I**
@@ -13,9 +13,9 @@ https://github.com/veca-boop/Project.Ingenier-a-de-Software-I**
 
 ## 1. Descripción del sistema
 
-**Nombre del sistema: Bot de Atención Académica** que sea de copilot
+**Nombre del sistema: Agente de Atención Académica en Copilot**
 
-**Descripción: Es un bot dentro del chat de Microsoft Teams del director de carrera de Ing.TI que responde automáticamente las preguntas frecuentes de los alumnos sobre la carrera; por ejemplo, trámites, materias, fechas y procesos académicos, utilizando información previamente proporcionada y aprobada por la dirección. Cuando Dirección realice cambios en la información, se actualizará únicamente la información afectada antes de que vuelva a ser utilizada por los alumnos. Como mínimo, la información será revisada al inicio de cada semestre.**
+**Descripción: Es un agente de Copilot integrado en el chat de Microsoft Teams de la directora de carrera que responde automáticamente a las preguntas frecuentes de los alumnos de la carrera de Ingeniería en Tecnologías de la Información sobre temas como trámites, materias, fechas y procesos académicos, utilizando información previamente proporcionada y aprobada por la Dirección de carrera. Cuando Dirección realice cambios en la información, se actualizará únicamente la información afectada antes de que vuelva a ser consultada por los alumnos. Como mínimo, la información será revisada al inicio de cada semestre.**
 
 ---
 
@@ -32,7 +32,7 @@ https://github.com/veca-boop/Project.Ingenier-a-de-Software-I**
 | Alumno | Quieren obtener respuestas rápidas a sus dudas | Que la directora de carrera no esté disponible en ese momento |
 | Dirección de carrera | Quiere tener acceso a modificar la información que el bot usa | Asegurar que los alumnos reciban información correcta y actualizada|
 
-**Un conflicto entre usuarios: El alumno quiere que el bot responda la mayor cantidad de preguntas posibles y de manera inmediata, mientras que la dirección necesita limitar las respuestas del bot a información confiable y aprobada.**
+**Un conflicto entre usuarios: El alumno quiere que el agente responda la mayor cantidad de preguntas posibles y de manera inmediata, mientras que Dirección necesita limitar las respuestas del agente a información confiable, actualizada y aprobada.**
 
 ---
 
@@ -67,14 +67,15 @@ https://github.com/veca-boop/Project.Ingenier-a-de-Software-I**
 
 ### Explícitamente fuera del alcance
 
-- El bot no te puede hacer el trámite.
+- El agente no te puede hacer el trámite.
 
-- El bot no puede resolver dudas fuera de su menú de servicios.
+- El agente no puede resolver dudas fuera de su menú de servicios.
 
-- El bot no puede dar información detallada de los pasos para ningún trámite.
+- El agente no puede dar información detallada de los pasos para ningún trámite.
+
 
 **Por qué queda fuera:**
-El bot es una ayuda para que el director de carrera no gaste tiempo contestando preguntas frecuentes, no una IA de ayuda estudiantil.
+El agente está diseñado como una herramienta de apoyo para reducir el tiempo que la directora de carrera dedica a responder preguntas frecuentes. Por lo que su función es proporcionar información académica previamente autorizada, no sustituir la atención directa de la directora ni funcionar como un asistente académico de propósito general.
 ---
 
 ## 4. Tipo de sistema y restricciones
@@ -83,7 +84,7 @@ El bot es una ayuda para que el director de carrera no gaste tiempo contestando 
 
  Web y SaaS  
 
-**Por qué es de ese tipo: El bot funciona como un servicio integrado en el chat de  Microsoft Teams del director de carrera. Por lo cual Los usuarios no necesitan instalar una aplicación independiente. Además, el bot no manipula la información, no tiene grandes riesgos, ni usar un dispositivo físico, sino que el usuario interactúa con el bot directamente desde la plataforma de Teams.**
+**Por qué es de ese tipo: El agente funciona como un servicio integrado en el chat de  Microsoft Teams del director de carrera. Por lo cual Los usuarios no necesitan instalar una aplicación independiente. Además, el bot no manipula la información, no tiene grandes riesgos, ni usar un dispositivo físico, sino que el usuario interactúa con el bot directamente desde la plataforma de Teams.**
 
 **Atributos de calidad que impone:**
 
@@ -100,21 +101,23 @@ El bot es una ayuda para que el director de carrera no gaste tiempo contestando 
 2. El bot debe proporcionar respuestas claras y relacionadas con la información solicitada por el usuario.
 
 3. La información proporcionada por el bot debe corresponder a la información oficial proporcionada por Dirección.
+   
+5. Cuando Dirección modifique información, únicamente deberá actualizarse el contenido afectado antes de que vuelva a ser consultado por los alumnos.
 
 ---
 
 ## 5. Ciclo de vida elegido
 
-**Modelo elegido: Prototipado rápido (Software a la medida)** agil/incrementado
+**Modelo elegido: Metodología ágil – Desarrollo incremental (Software a la medida)**
 
-**Por qué le conviene a este proyecto: El bot de Teams requiere interacción directa con los usuarios, por lo que es importante comprobar desde las primeras versiones si sus respuestas y funcionalidades realmente satisfacen sus necesidades. El prototipado rápido permite crear una versión inicial del bot, probarla con usuarios, recibir retroalimentación y realizar ajustes antes de desarrollar la versión definitiva.**
+**Por qué le conviene a este proyecto: El desarrollo incremental permite construir el agente de manera progresiva incorporando sus funcionalidades en diferentes etapas. En cada incremento se puede revisar el funcionamiento del agente y obtener retroalimentación de la directora para determinar qué elementos deben mantenerse, modificarse, agregarse o eliminarse. Esto permite que el sistema se adapte a las necesidades reales de los usuarios y que la información proporcionada por el agente sea validada antes de continuar con los siguientes incrementos.**
 
 ### Alternativas descartadas
 
-**Alternativa 1: Modelo en Cascada**
+**Alternativa 1: Prototipado rápido**
 
-*Por qué la descarté: Se descartó porque requiere definir los requisitos desde el inicio y seguir las etapas de manera secuencial. En este proyecto, las necesidades y funcionalidades del bot pueden cambiar después de probarlo con los usuarios, por lo que un modelo tan rígido dificultaría realizar modificaciones.*
+*Por qué la descarté: Se descartó porque, aunque permite obtener retroalimentación de los usuarios mediante una versión inicial del sistema, su enfoque está principalmente orientado a construir un prototipo para validar la propuesta y desecharla antes de desarrollar la versión definitiva. Para este proyecto resulta más conveniente utilizar un desarrollo incrementa*
 
 **Alternativa 2: Modelo en espiral**
 
-*Por qué la descarté: Se descartó porque está orientado principalmente a proyectos grandes con un nivel elevado de incertidumbre y riesgos técnicos o económicos. Para un bot de Teams de alcance más limitado, su análisis constante de riesgos y sus iteraciones resultarían innecesariamente complejos.*
+*Por qué la descarté: Se descartó porque está orientado principalmente a proyectos grandes con un nivel elevado de incertidumbre y riesgos técnicos o económicos. Para un agente de Copilot de alcance más limitado, su análisis constante de riesgos y sus iteraciones resultarían innecesariamente complejos.*
