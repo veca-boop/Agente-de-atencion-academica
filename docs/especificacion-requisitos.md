@@ -80,6 +80,7 @@ El sistema será un agente de Copilot integrado en el chat personal de Microsoft
 | RF-003 | Lista de trámites | Alta | Visión del producto |
 | RF-004 | Información general de un trámite | Alta | Visión del producto |
 | RF-005 | Calendario y restricciones | Alta | Visión del producto y entrevista |
+| RF-006 | Actualizar información académica | Imprescindible | Visión del producto |
 
 ### 3.2 Fichas
 
@@ -101,7 +102,7 @@ El sistema será un agente de Copilot integrado en el chat personal de Microsoft
 | Origen | Visión del producto + entrevista |
 | Prioridad | Imprescindible |
 | Criterio de aceptación | Al seleccionar la opción **Materias**, el sistema deberá mostrar la información correspondiente a las materias disponibles del semestre, incluyendo horario y profesor. |
-| Relacionado con | RNF-003 |
+| Relacionado con | RNF-CON-001 |
 
 ### RF-003 · Lista de trámites
 
@@ -111,7 +112,7 @@ El sistema será un agente de Copilot integrado en el chat personal de Microsoft
 | Origen | Visión del producto |
 | Prioridad | Imprescindible |
 | Criterio de aceptación | Al seleccionar **Trámites y bajas**, el sistema deberá mostrar la lista de trámites autorizados por Dirección. |
-| Relacionado con | RF-004, RNF-003 |
+| Relacionado con | RF-004, RNF-CON-001 |
 
 ### RF-004 · Información general de un trámite
 
@@ -121,7 +122,7 @@ El sistema será un agente de Copilot integrado en el chat personal de Microsoft
 | Origen | Visión del producto |
 | Prioridad | Imprescindible |
 | Criterio de aceptación | Al seleccionar un trámite, el sistema deberá mostrar los cuatro elementos de información definidos para dicho trámite y el mensaje de contacto con Dirección cuando se requiera información más específica. |
-| Relacionado con | RF-003, RNF-003 |
+| Relacionado con | RF-003, RNF-CON-001 |
 
 ### RF-005 · Calendario y restricciones
 
@@ -131,7 +132,27 @@ El sistema será un agente de Copilot integrado en el chat personal de Microsoft
 | Origen | Visión del producto + entrevista |
 | Prioridad | Imprescindible |
 | Criterio de aceptación | Al seleccionar la opción, el sistema deberá mostrar la información vigente definida para el servicio seleccionado. El calendario utilizado deberá corresponder a la fuente oficial definida por Dirección. |
-| Relacionado con | RNF-003 |
+| Relacionado con | RNF-CON-001 |
+
+### RF-006 · Actualizar información académica
+
+| Campo | Contenido |
+|---|---|
+| Descripción | El sistema deberá permitir actualizar únicamente la información académica que haya sido modificada por Dirección antes de que vuelva a ser consultada por los alumnos. |
+| Origen | Visión del producto |
+| Prioridad | Imprescindible |
+| Criterio de aceptación | Cuando Dirección proporcione una modificación de información, el contenido afectado deberá quedar actualizado para las consultas posteriores sin modificar la información que no haya cambiado. |
+| Relacionado con | RF-002, RF-003, RF-004, RF-005, RNF-CON-001 |
+
+### RF-007 · Manejo de consultas sin información autorizada
+
+| Campo | Contenido |
+|---|---|
+| Descripción | El sistema deberá indicar al alumno cuando no cuente con información autorizada para responder una consulta y orientarlo hacia Dirección de carrera. |
+| Origen | Entrevista + análisis de excepciones |
+| Prioridad | Imprescindible |
+| Criterio de aceptación | Cuando el agente no encuentre información autorizada para responder una consulta, deberá informar al alumno que no puede proporcionar la respuesta y orientarlo para contactar a Dirección. |
+| Relacionado con | RNF-CON-001 |
 
 ---
   
@@ -146,7 +167,6 @@ El sistema será un agente de Copilot integrado en el chat personal de Microsoft
 | RNF-CON-001 | Confiabilidad | Información oficial | Imprescindible | Visión del producto + entrevista |			
 		
 ### 4.2 Fichas
--Agrupadas por atributo de calidad. Abajo va un ejemplo completo; bórralo cuando escribas los tuyos.
 
 ### RNF-DIS-001 · Disponibilidad 24 horas
 
@@ -187,24 +207,56 @@ El sistema será un agente de Copilot integrado en el chat personal de Microsoft
 ---
 
 # 5. Casos de uso
--Se trabajan en la semana 7, después de la entrevista. Cada caso de uso se relaciona con los requisitos funcionales que realiza.
+
+| ID | Nombre | Actor principal | Requisitos relacionados |
+|---|---|---|---|
+| CU-01 | Consultar materias | Alumno | RF-001, RF-002 |
+| CU-02 | Consultar trámites disponibles | Alumno | RF-001, RF-003 |
+| CU-03 | Consultar información de un trámite | Alumno | RF-003, RF-004 |
+| CU-04 | Consultar calendario y restricciones | Alumno | RF-001, RF-005 |
+| CU-05 | Actualizar información académica | Dirección de carrera | RF-006 |
 
 ---
 
 # 6. Trazabilidad
--Esta tabla es la que hace posible el análisis de impacto de la semana 15. Mantenla actualizada conforme cambien los requisitos.
 
-| Requisito |	Origen |	Caso de uso |	Elemento del prototipo |
+| Requisito | Origen | Caso de uso | Elemento del prototipo |
 |---|---|---|---|
-| RF-001 |	Entrevista 15 sep	CU-01 | Registrar consulta |	Pantalla de consulta |
+| RF-001 | Visión del producto | CU-01, CU-02, CU-04 | Pendiente |
+| RF-002 | Visión del producto + entrevista | CU-01 | Pendiente |
+| RF-003 | Visión del producto | CU-02, CU-03 | Pendiente |
+| RF-004 | Visión del producto | CU-03 | Pendiente |
+| RF-005 | Visión del producto + entrevista | CU-04 | Pendiente |
+| RF-006 | Visión del producto | CU-05 | Pendiente |
+| RNF-DIS-001 | Entrevista | CU-01, CU-02, CU-03, CU-04 | Pendiente |
+| RNF-USA-001 | Supuesto + validación pendiente | CU-01, CU-02, CU-04 | Pendiente |
+| RNF-CON-001 | Visión del producto + entrevista | CU-01, CU-02, CU-03, CU-04, CU-05 | Pendiente |
 
 ---
 
 # 7. Registro de cambios
--Cada modificación posterior a la primera versión se anota aquí. Un requisito eliminado se marca como tal, pero su identificador no se reutiliza.
 
-| Fecha |	Requisito |	Qué cambió |	Por qué |
+
+| Fecha | Requisito / Documento | Qué cambió | Por qué |
 |---|---|---|---|
+| 08/09/2026 | Descripción del sistema | Se cambió la denominación de **“bot”** a **“agente de Copilot”**. | Se ajustó la descripción del sistema a la solución solicitada por Dirección. |
+| 08/09/2026 | Tipo de sistema / metodología | Se cambió la metodología de **prototipado rápido** a **metodología ágil – desarrollo incremental (software a la medida)**. | Se determinó que el proyecto se desarrollará progresivamente, permitiendo validar y modificar cada incremento. |
+| 22/09/2026 | Requisitos | Se estableció la nomenclatura para los requisitos funcionales y no funcionales: **RF-###** y **RNF-###-###**. | Se adoptó una identificación única y estable para facilitar la trazabilidad. |
+| 22/09/2026 | Requisitos | Se estableció que cada requisito debe expresar una sola idea, ser verificable y permanecer dentro del alcance del sistema. | Se ajustó la redacción de requisitos a los criterios establecidos para el proyecto. |
+| 22/09/2026 | Requisitos | Se estableció que el campo **Origen** debe distinguir entre información confirmada y deducida | Se busca diferenciar lo que fue confirmado por Dirección de lo que todavía se está suponiendo. |
+| 24/09/2026 | RF-001 | Se definió el requisito **Menú de servicios** con las opciones Materias, Trámites y bajas, y Calendario y restricciones. | Se derivó directamente del alcance establecido en la Visión del producto. |
+| 24/09/2026 | RF-002 | Se definió el requisito **Información de materias**, incluyendo materias disponibles, horarios y maestros. | Se retomó la funcionalidad establecida en la Visión y se complementó con la información obtenida en la entrevista. |
+| 24/09/2026 | RF-003 | Se definió el requisito **Lista de trámites**. | Se formalizó la lista de trámites escolares que deberá mostrar el agente. |
+| 24/09/2026 | RF-004 | Se definió el requisito **Información general de un trámite**, incluyendo qué es, para qué sirve, información necesaria y a quién contactar. | Se formalizó la información que deberá proporcionar el agente sobre cada trámite. |
+| 24/09/2026 | RF-005 | Se definió el requisito **Calendario y restricciones**. | Se formalizó el servicio correspondiente al calendario escolar y las restricciones. |
+| 24/09/2026 | RNF-DIS-001 | Se confirmó que el agente deberá estar disponible **las 24 horas**. | Dirección confirmó durante la entrevista que los alumnos necesitan consultar la información en todo momento. |
+| 24/09/2026 | RNF-USA-001 | Se identificó como supuesto que un alumno debería obtener la información en un máximo de **tres interacciones**. | Se necesitaba convertir la usabilidad en una métrica comprobable; el número de tres interacciones quedó pendiente de validación. |
+| 24/09/2026 | RNF-CON-001 | Se definió el requisito de **Confiabilidad**, estableciendo que la información deberá coincidir con la información oficial aprobada por Dirección. | Se confirmó la importancia de utilizar información oficial y previamente aprobada. |
+| 24/09/2026 | RF-002 | Se identificó que para orientar actualmente a un alumno sobre las materias que puede cursar se consideran promedio, acreditación de español e inglés, créditos, semestre, materias específicas y prerrequisitos. | La entrevista permitió descubrir información adicional que no estaba contemplada originalmente. |
+| 24/09/2026 | RF-005 | Se identificó que el calendario utilizado actualmente por Dirección proviene de la página oficial de Anáhuac Querétaro. | Se confirmó la fuente utilizada para determinar la información vigente del calendario. |
+| 24/09/2026 | Actualización de información | Se identificó que los cambios en información de trámites se producen por normatividad y Administración Escolar. | La entrevista permitió conocer el origen de las modificaciones a la información. |
+| 24/09/2026 | Casos de uso | Se identificaron seis casos de uso: consultar materias, consultar trámites disponibles, consultar información de un trámite, consultar calendario y restricciones, actualizar información académica y consultar información no disponible. | Se tradujeron los requisitos y situaciones identificadas en la entrevista a objetivos completos de los actores. |
+| 27/09/2026 | RF-006 | Se identificó el requisito **Actualizar información académica**. | El análisis de los casos de uso permitió formalizar como requisito una funcionalidad que ya estaba contemplada en la Visión, pero que no había sido documentada como RF. |
 
 ---
 
