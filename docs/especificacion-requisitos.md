@@ -192,7 +192,7 @@ El sistema será un agente de Copilot integrado en el chat personal de Microsoft
 | Atributo de calidad | Usabilidad |
 | Descripción | Un alumno deberá poder consultar la información de un servicio del menú en un máximo de tres interacciones con el agente, sin recibir instrucciones externas. |
 | Métrica | Máximo 3 interacciones. |
-| Origen | Supuesto del equipo; pendiente de validación específica |
+| Origen | Supuesto del equipo |
 | Prioridad | Importante |
 | Por qué importa | La interacción debe ser sencilla para que los alumnos puedan utilizar el agente sin capacitación previa. |
 | Afecta a | RF-001, RF-002, RF-003, RF-005 |
@@ -257,6 +257,9 @@ El agente está disponible y el trámite que desea consultar se encuentra dentro
 
 **1a. El alumno requiere información más específica:**  
 El sistema indica que debe contactar directamente a Dirección de carrera.
+
+**2a. El trámite solicitado no está disponible:**
+El sistema informa al alumno que el trámite solicitado no se encuentra entre los servicios disponibles y mantiene al alumno dentro de la sección de trámites.
 
 ### Postcondición
 
