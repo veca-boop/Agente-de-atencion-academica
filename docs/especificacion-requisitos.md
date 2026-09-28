@@ -226,7 +226,7 @@ El sistema será un agente de Copilot integrado en el chat personal de Microsoft
 
 ### Prototipo navegable
 
-[Enlace](https://www.figma.com/proto/SCYiz3nCxSqjktAWXtbIhz/Prototipo-Agente-de-atenci%C3%B3n-acad%C3%A9mica?node-id=1-5145&t=RD9Xxfk5GiKQwI9E-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A5145)
+[Enlace](https://www.figma.com/proto/SCYiz3nCxSqjktAWXtbIhz/Prototipo-Agente-de-atenci%C3%B3n-acad%C3%A9mica?node-id=1-5145&t=YBxItOX3860Dyt1M-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A5145)
 
 El prototipo corresponde al CU-03 · Consultar información de un trámite e incluye el escenario principal y un flujo alterno para solicitudes de información más específica.
 
@@ -310,5 +310,4 @@ RF-003, RF-004
 | 27/09/2026 | Casos de uso | Se definieron seis casos de uso: consultar materias, consultar trámites disponibles, consultar información de un trámite, consultar calendario escolar, consultar restricciones y actualizar información académica | Se tradujeron los requisitos y situaciones identificadas en la entrevista a objetivos completos de los actores |
 | 27/09/2026 | RF-005 | Se separaron los casos de uso de consultar calendario escolar y consultar restricciones, aunque ambos pertenecen al servicio **Calendario y restricciones** | Se identificaron como dos objetivos distintos que el alumno puede alcanzar mediante el sistema |
 | 27/09/2026 | RF-006 | Se identificó el requisito **Actualizar información académica** como requisito funcional relacionado con el caso de uso CU-06 | El análisis de los casos de uso permitió formalizar como requisito una funcionalidad que ya estaba contemplada en la Visión, pero que no había sido documentada como RF |
-| 28/09/2026 | Prototipo navegable | Se desarrolló un prototipo navegable en Figma para el CU-03, incluyendo el escenario principal y un flujo alterno | Se construyó el prototipo solicitado para validar la navegación y representar la interacción del alumno con el agente |
 | 28/09/2026 | Prototipo navegable | Se desarrolló un prototipo navegable en Figma para el CU-03, incluyendo el escenario principal y un flujo alterno | Se construyó el prototipo solicitado para validar la navegación y representar la interacción del alumno con el agente |
