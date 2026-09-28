@@ -4,10 +4,10 @@
 
 **Autor: Ana Victoria Hernández Álvarez**
 
-**Fecha de la última versión: 8 de septiembre de 2026**
+**Fecha de la última versión: 28 de septiembre de 2026**
 
 **Repositorio: 
-https://github.com/veca-boop/Project.Ingenier-a-de-Software-I**
+https://github.com/veca-boop/Agente-de-atencion-academica**
 
 ---
 
@@ -30,7 +30,7 @@ https://github.com/veca-boop/Project.Ingenier-a-de-Software-I**
 | Tipo de usuario | Qué necesita del sistema | Qué le preocupa |
 |---|---|---|
 | Alumno | Quieren obtener respuestas rápidas a sus dudas | Que la directora de carrera no esté disponible en ese momento |
-| Dirección de carrera | Quiere tener acceso a modificar la información que el bot usa | Asegurar que los alumnos reciban información correcta y actualizada|
+| Dirección de carrera | Quiere tener acceso a modificar la información que el agente usa | Asegurar que los alumnos reciban información correcta y actualizada|
 
 **Un conflicto entre usuarios: El alumno quiere que el agente responda la mayor cantidad de preguntas posibles y de manera inmediata, mientras que Dirección necesita limitar las respuestas del agente a información confiable, actualizada y aprobada.**
 
@@ -84,23 +84,23 @@ El agente está diseñado como una herramienta de apoyo para reducir el tiempo q
 
  Web y SaaS  
 
-**Por qué es de ese tipo: El agente funciona como un servicio integrado en el chat de  Microsoft Teams del director de carrera. Por lo cual Los usuarios no necesitan instalar una aplicación independiente. Además, el bot no manipula la información, no tiene grandes riesgos, ni usar un dispositivo físico, sino que el usuario interactúa con el bot directamente desde la plataforma de Teams.**
+**Por qué es de ese tipo: El agente funciona como un servicio integrado en el chat de  Microsoft Teams del director de carrera. Por lo cual Los usuarios no necesitan instalar una aplicación independiente. Además, el agente no manipula la información, no tiene grandes riesgos, ni usar un dispositivo físico, sino que el usuario interactúa con el agente directamente desde la plataforma de Teams.**
 
 **Atributos de calidad que impone:**
 
 | Atributo | Por qué importa en mi caso | Qué pasa si no se cumple |
 |---|---|---|
-|Disponibilidad | El bot debe estar disponible dentro de Teams cuando los usuarios necesiten consultar la información.|Los usuarios no podrán acceder a la información mediante el bot. |
-|Usabilidad |Las respuestas deben ser claras y la interacción sencilla para que cualquier usuario pueda utilizarlo. | Los usuarios pueden confundirse o dejar de utilizar el bot.|
-|Confiabilidad |El bot debe mostrar correctamente la información proporcionada por Dirección. |Puede generar confusión y hacer que los usuarios reciban información equivocada. |
+|Disponibilidad | El agente debe estar disponible dentro de Teams cuando los usuarios necesiten consultar la información.|Los usuarios no podrán acceder a la información mediante el agente. |
+|Usabilidad |Las respuestas deben ser claras y la interacción sencilla para que cualquier usuario pueda utilizarlo. | Los usuarios pueden confundirse o dejar de utilizar el agente.|
+|Confiabilidad |El agente debe mostrar correctamente la información proporcionada por Dirección. |Puede generar confusión y hacer que los usuarios reciban información equivocada. |
 
 **Reglas de negocio que ya identifiqué:**
 
-1. El bot debe limitar sus respuestas a las categorías de información autorizadas por Dirección.
+1. El agente debe limitar sus respuestas a las categorías de información autorizadas por Dirección.
 
-2. El bot debe proporcionar respuestas claras y relacionadas con la información solicitada por el usuario.
+2. El agente debe proporcionar respuestas claras y relacionadas con la información solicitada por el usuario.
 
-3. La información proporcionada por el bot debe corresponder a la información oficial proporcionada por Dirección.
+3. La información proporcionada por el agente debe corresponder a la información oficial proporcionada por Dirección.
    
 5. Cuando Dirección modifique información, únicamente deberá actualizarse el contenido afectado antes de que vuelva a ser consultado por los alumnos.
 
