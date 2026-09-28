@@ -224,6 +224,45 @@ El sistema será un agente de Copilot integrado en el chat personal de Microsoft
 | CU-05 | Consultar restricciones | Alumno | RF-001, RF-005 |
 | CU-06 | Actualizar información académica | Dirección de carrera | RF-006 |
 
+## CU-03 · Consultar información de un trámite
+
+### Actor principal
+
+Alumno
+
+### Objetivo
+
+Obtener información general sobre un trámite escolar disponible.
+
+### Precondición
+
+El agente está disponible y el trámite que desea consultar se encuentra dentro de la información autorizada por Dirección de carrera.
+
+### Escenario principal
+
+1. El alumno selecciona la opción **“Trámites disponibles”**.
+2. El sistema muestra la lista de trámites autorizados.
+3. El alumno selecciona el trámite que desea consultar.
+4. El sistema muestra qué es el trámite, para qué sirve, qué información debe tener disponible y a quién debe contactar.
+5. El sistema muestra el mensaje: **“Si requieres información más específica contacta a tu director de carrera”.**
+6. El alumno obtiene la información general disponible sobre el trámite.
+
+### Flujos alternos
+
+**1a. El trámite que busca el alumno no está disponible:**  
+El sistema informa que el trámite no se encuentra entre los servicios disponibles y mantiene al alumno dentro de la opción de trámites.
+
+**2a. El alumno requiere información más específica:**  
+El sistema indica que debe contactar directamente a Dirección de carrera.
+
+### Postcondición
+
+El alumno obtiene la información general disponible sobre el trámite o es dirigido a Dirección de carrera cuando necesita información específica.
+
+### Requisitos que realiza
+
+RF-003, RF-004
+
 ---
 
 # 6. Trazabilidad
