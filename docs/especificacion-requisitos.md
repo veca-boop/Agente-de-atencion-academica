@@ -255,10 +255,7 @@ El agente está disponible y el trámite que desea consultar se encuentra dentro
 
 ### Flujos alternos
 
-**1a. El trámite que busca el alumno no está disponible:**  
-El sistema informa que el trámite no se encuentra entre los servicios disponibles y mantiene al alumno dentro de la opción de trámites.
-
-**2a. El alumno requiere información más específica:**  
+**1a. El alumno requiere información más específica:**  
 El sistema indica que debe contactar directamente a Dirección de carrera.
 
 ### Postcondición
@@ -291,22 +288,24 @@ RF-003, RF-004
 
 | Fecha | Requisito / Documento | Qué cambió | Por qué |
 |---|---|---|---|
-| 08/09/2026 | Descripción del sistema | Se cambió la denominación de **“bot”** a **“agente de Copilot”**. | Se ajustó la descripción del sistema a la solución solicitada por Dirección. |
-| 08/09/2026 | Tipo de sistema / metodología | Se cambió la metodología de **prototipado rápido** a **metodología ágil – desarrollo incremental (software a la medida)**. | Se determinó que el proyecto se desarrollará progresivamente, permitiendo validar y modificar cada incremento. |
-| 22/09/2026 | Requisitos | Se estableció la nomenclatura para los requisitos funcionales y no funcionales: **RF-###** y **RNF-###-###**. | Se adoptó una identificación única y estable para facilitar la trazabilidad. |
-| 22/09/2026 | Requisitos | Se estableció que cada requisito debe expresar una sola idea, ser verificable y permanecer dentro del alcance del sistema. | Se ajustó la redacción de requisitos a los criterios establecidos para el proyecto. |
-| 22/09/2026 | Requisitos | Se estableció que el campo **Origen** debe distinguir entre información confirmada y deducida. | Se busca diferenciar lo que fue confirmado por Dirección de lo que todavía se está suponiendo. |
-| 24/09/2026 | RF-001 | Se definió el requisito **Menú de servicios** con las opciones Materias, Trámites y bajas, y Calendario y restricciones. | Se derivó directamente del alcance establecido en la Visión del producto. |
-| 24/09/2026 | RF-002 | Se definió el requisito **Información de materias**, incluyendo materias disponibles, horarios y maestros. | Se retomó la funcionalidad establecida en la Visión y se complementó con la información obtenida en la entrevista. |
-| 24/09/2026 | RF-003 | Se definió el requisito **Lista de trámites**. | Se formalizó la lista de trámites escolares que deberá mostrar el agente. |
-| 24/09/2026 | RF-004 | Se definió el requisito **Información general de un trámite**, incluyendo qué es, para qué sirve, información necesaria y a quién contactar. | Se formalizó la información que deberá proporcionar el agente sobre cada trámite. |
-| 24/09/2026 | RF-005 | Se definió el requisito **Calendario y restricciones**. | Se formalizó el servicio correspondiente al calendario escolar y las restricciones. |
-| 24/09/2026 | RNF-DIS-001 | Se confirmó que el agente deberá estar disponible **las 24 horas**. | Dirección confirmó durante la entrevista que los alumnos necesitan consultar la información en todo momento. |
-| 24/09/2026 | RNF-USA-001 | Se identificó como supuesto que un alumno debería obtener la información en un máximo de **tres interacciones**. | Se necesitaba convertir la usabilidad en una métrica comprobable; el número de tres interacciones quedó pendiente de validación. |
-| 24/09/2026 | RNF-CON-001 | Se definió el requisito de **Confiabilidad**, estableciendo que la información deberá coincidir con la información oficial aprobada por Dirección. | Se confirmó la importancia de utilizar información oficial y previamente aprobada. |
-| 24/09/2026 | RF-002 | Se identificó que para orientar actualmente a un alumno sobre las materias que puede cursar se consideran promedio, acreditación de español e inglés, créditos, semestre, materias específicas y prerrequisitos. | La entrevista permitió descubrir información adicional que no estaba contemplada originalmente. |
-| 24/09/2026 | RF-005 | Se identificó que el calendario utilizado actualmente por Dirección proviene de la página oficial de Anáhuac Querétaro. | Se confirmó la fuente utilizada para determinar la información vigente del calendario. |
-| 24/09/2026 | Actualización de información | Se identificó que los cambios en información de trámites se producen por normatividad y Administración Escolar. | La entrevista permitió conocer el origen de las modificaciones a la información. |
-| 27/09/2026 | Casos de uso | Se definieron seis casos de uso: consultar materias, consultar trámites disponibles, consultar información de un trámite, consultar calendario escolar, consultar restricciones y actualizar información académica. | Se tradujeron los requisitos y situaciones identificadas en la entrevista a objetivos completos de los actores. |
-| 27/09/2026 | RF-005 | Se separaron los casos de uso de consultar calendario escolar y consultar restricciones, aunque ambos pertenecen al servicio **Calendario y restricciones**. | Se identificaron como dos objetivos distintos que el alumno puede alcanzar mediante el sistema. |
-| 27/09/2026 | RF-006 | Se identificó el requisito **Actualizar información académica** como requisito funcional relacionado con el caso de uso CU-06. | El análisis de los casos de uso permitió formalizar como requisito una funcionalidad que ya estaba contemplada en la Visión, pero que no había sido documentada como RF. |
+| 08/09/2026 | Descripción del sistema | Se cambió la denominación de **“bot”** a **“agente de Copilot”** | Se ajustó la descripción del sistema a la solución solicitada por Dirección |
+| 08/09/2026 | Tipo de sistema / metodología | Se cambió la metodología de **prototipado rápido** a **metodología ágil – desarrollo incremental (software a la medida)** | Se determinó que el proyecto se desarrollará progresivamente, permitiendo validar y modificar cada incremento |
+| 22/09/2026 | Requisitos | Se estableció la nomenclatura para los requisitos funcionales y no funcionales: **RF-###** y **RNF-###-###** | Se adoptó una identificación única y estable para facilitar la trazabilidad |
+| 22/09/2026 | Requisitos | Se estableció que cada requisito debe expresar una sola idea, ser verificable y permanecer dentro del alcance del sistema | Se ajustó la redacción de requisitos a los criterios establecidos para el proyecto |
+| 22/09/2026 | Requisitos | Se estableció que el campo **Origen** debe distinguir entre información confirmada y deducida | Se busca diferenciar lo que fue confirmado por Dirección de lo que todavía se está suponiendo |
+| 24/09/2026 | RF-001 | Se definió el requisito **Menú de servicios** con las opciones Materias, Trámites y bajas, y Calendario y restricciones | Se derivó directamente del alcance establecido en la Visión del producto |
+| 24/09/2026 | RF-002 | Se definió el requisito **Información de materias**, incluyendo materias disponibles, horarios y maestros | Se retomó la funcionalidad establecida en la Visión y se complementó con la información obtenida en la entrevista |
+| 24/09/2026 | RF-003 | Se definió el requisito **Lista de trámites** | Se formalizó la lista de trámites escolares que deberá mostrar el agente |
+| 24/09/2026 | RF-004 | Se definió el requisito **Información general de un trámite**, incluyendo qué es, para qué sirve, información necesaria y a quién contactar | Se formalizó la información que deberá proporcionar el agente sobre cada trámite |
+| 24/09/2026 | RF-005 | Se definió el requisito **Calendario y restricciones** | Se formalizó el servicio correspondiente al calendario escolar y las restricciones |
+| 24/09/2026 | RNF-DIS-001 | Se confirmó que el agente deberá estar disponible **las 24 horas** | Dirección confirmó durante la entrevista que los alumnos necesitan consultar la información en todo momento |
+| 24/09/2026 | RNF-USA-001 | Se identificó como supuesto que un alumno debería obtener la información en un máximo de **tres interacciones** | Se necesitaba convertir la usabilidad en una métrica comprobable; el número de tres interacciones quedó pendiente de validación |
+| 24/09/2026 | RNF-CON-001 | Se definió el requisito de **Confiabilidad**, estableciendo que la información deberá coincidir con la información oficial aprobada por Dirección | Se confirmó la importancia de utilizar información oficial y previamente aprobada |
+| 24/09/2026 | RF-002 | Se identificó que para orientar actualmente a un alumno sobre las materias que puede cursar se consideran promedio, acreditación de español e inglés, créditos, semestre, materias específicas y prerrequisitos | La entrevista permitió descubrir información adicional que no estaba contemplada originalmente |
+| 24/09/2026 | RF-005 | Se identificó que el calendario utilizado actualmente por Dirección proviene de la página oficial de Anáhuac Querétaro | Se confirmó la fuente utilizada para determinar la información vigente del calendario |
+| 24/09/2026 | Actualización de información | Se identificó que los cambios en información de trámites se producen por normatividad y Administración Escolar | La entrevista permitió conocer el origen de las modificaciones a la información |
+| 27/09/2026 | Casos de uso | Se definieron seis casos de uso: consultar materias, consultar trámites disponibles, consultar información de un trámite, consultar calendario escolar, consultar restricciones y actualizar información académica | Se tradujeron los requisitos y situaciones identificadas en la entrevista a objetivos completos de los actores |
+| 27/09/2026 | RF-005 | Se separaron los casos de uso de consultar calendario escolar y consultar restricciones, aunque ambos pertenecen al servicio **Calendario y restricciones** | Se identificaron como dos objetivos distintos que el alumno puede alcanzar mediante el sistema |
+| 27/09/2026 | RF-006 | Se identificó el requisito **Actualizar información académica** como requisito funcional relacionado con el caso de uso CU-06 | El análisis de los casos de uso permitió formalizar como requisito una funcionalidad que ya estaba contemplada en la Visión, pero que no había sido documentada como RF |
+| 28/09/2026 | Prototipo navegable | Se desarrolló un prototipo navegable en Figma para el CU-03, incluyendo el escenario principal y un flujo alterno | Se construyó el prototipo solicitado para validar la navegación y representar la interacción del alumno con el agente |
+| 28/09/2026 | Prototipo navegable | Se desarrolló un prototipo navegable en Figma para el CU-03, incluyendo el escenario principal y un flujo alterno | Se construyó el prototipo solicitado para validar la navegación y representar la interacción del alumno con el agente |
