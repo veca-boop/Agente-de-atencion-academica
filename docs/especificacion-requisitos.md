@@ -224,6 +224,12 @@ El sistema será un agente de Copilot integrado en el chat personal de Microsoft
 | CU-05 | Consultar restricciones | Alumno | RF-001, RF-005 |
 | CU-06 | Actualizar información académica | Dirección de carrera | RF-006 |
 
+### Prototipo navegable
+
+[Enlace](https://www.figma.com/proto/SCYiz3nCxSqjktAWXtbIhz/Prototipo-Agente-de-atenci%C3%B3n-acad%C3%A9mica?node-id=1-5145&t=RD9Xxfk5GiKQwI9E-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A5145)
+
+El prototipo corresponde al CU-03 · Consultar información de un trámite e incluye el escenario principal y un flujo alterno para solicitudes de información más específica.
+
 ## CU-03 · Consultar información de un trámite
 
 ### Actor principal
@@ -269,15 +275,15 @@ RF-003, RF-004
 
 | Requisito | Origen | Caso de uso | Elemento del prototipo |
 |---|---|---|---|
-| RF-001 | Visión del producto | CU-01, CU-02, CU-04, CU-05 | Pendiente |
-| RF-002 | Visión del producto + entrevista | CU-01 | Pendiente |
-| RF-003 | Visión del producto | CU-02, CU-03 | Pendiente |
-| RF-004 | Visión del producto | CU-03 | Pendiente |
-| RF-005 | Visión del producto + entrevista | CU-04, CU-05 | Pendiente |
-| RF-006 | Visión del producto | CU-06 | Pendiente |
-| RNF-DIS-001 | Entrevista | CU-01, CU-02, CU-03, CU-04, CU-05, CU-06 | Pendiente |
-| RNF-USA-001 | Supuesto + validación pendiente | CU-01, CU-02, CU-03, CU-04, CU-05 | Pendiente |
-| RNF-CON-001 | Visión del producto + entrevista | CU-01, CU-02, CU-03, CU-04, CU-05, CU-06 | Pendiente |
+| RF-001 | Visión del producto | CU-01, CU-02, CU-04, CU-05 | Prototipo Figma: Menú principal |
+| RF-002 | Visión del producto + entrevista | CU-01 | No hay |
+| RF-003 | Visión del producto | CU-02, CU-03 | Prototipo Figma: Menú principal y Lista de trámites |
+| RF-004 | Visión del producto | CU-03 | Prototipo Figma: Información del trámite y Flujo alterno |
+| RF-005 | Visión del producto + entrevista | CU-04, CU-05 | No hay |
+| RF-006 | Visión del producto | CU-06 | No hay |
+| RNF-DIS-001 | Entrevista | CU-01, CU-02, CU-03, CU-04, CU-05, CU-06 | No hay |
+| RNF-USA-001 | Supuesto + validación pendiente | CU-01, CU-02, CU-03, CU-04, CU-05 | No hay |
+| RNF-CON-001 | Visión del producto + entrevista | CU-01, CU-02, CU-03, CU-04, CU-05, CU-06 | No hay |
 
 ---
 
