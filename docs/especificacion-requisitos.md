@@ -222,7 +222,7 @@ El sistema no deberá:
 |---|---|
 | **Atributo de calidad** | Disponibilidad |
 | **Descripción** | El agente deberá permanecer disponible para que los alumnos puedan realizar consultas académicas durante cualquier momento del día. |
-| **Métrica** | • El agente deberá estar disponible las 24 horas del día.<br>• El agente deberá estar disponible los 7 días de la semana.<br>• La disponibilidad estará sujeta al funcionamiento de Microsoft Teams y de los servicios de Copilot. |
+| **Métrica** | • El agente deberá estar disponible las 24 horas del día, los 7 días de la semana.<br>• La disponibilidad estará sujeta al funcionamiento de Microsoft Teams y de los servicios de Copilot. |
 | **Origen** | Entrevista de elicitación |
 | **Prioridad** | Imprescindible |
 | **Por qué importa** | Los alumnos necesitan consultar información académica sin depender de la disponibilidad inmediata de Dirección de carrera. |
@@ -236,7 +236,7 @@ El sistema no deberá:
 |---|---|
 | **Atributo de calidad** | Usabilidad |
 | **Descripción** | Un alumno deberá poder consultar la información correspondiente a los servicios principales del agente sin recibir capacitación previa. |
-| **Métrica** | • El alumno deberá poder iniciar una consulta sin capacitación previa.<br>• El alumno deberá poder acceder a la información solicitada en un máximo de 3 interacciones con el agente.<br>• El alumno deberá poder completar la consulta utilizando únicamente las opciones y respuestas proporcionadas por el agente. |
+| **Métrica** | • El alumno deberá poder acceder a la información solicitada en un máximo de 3 interacciones con el agente.<br>• El alumno deberá poder completar la consulta utilizando únicamente las opciones y respuestas proporcionadas por el agente. |
 | **Origen** | Supuesto del equipo + validación pendiente |
 | **Prioridad** | Importante |
 | **Por qué importa** | La interacción debe ser sencilla para que los alumnos puedan utilizar el agente sin capacitación previa. El límite de 3 interacciones es un supuesto del equipo y deberá validarse mediante pruebas con usuarios. |
