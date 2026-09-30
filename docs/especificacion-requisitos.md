@@ -75,8 +75,8 @@ El sistema no deberá:
 | RF-006 | Consultar información de un trámite | Imprescindible | Visión del producto |
 | RF-007 | Consultar calendario escolar | Imprescindible | Visión del producto + entrevista |
 | RF-008 | Consultar restricciones escolares | Imprescindible | Visión del producto + entrevista |
-| RF-009 | Consultar causas de restricciones escolares | Imprescindible | Entrevista |
-| RF-010 | Actualizar información académica | Imprescindible | Visión del producto |
+| RF-009 | Consultar causas de restricción escolar | Imprescindible | Entrevista |
+| RF-010 | Modificar información académica | Imprescindible | Visión del producto |
 
 ---
 
