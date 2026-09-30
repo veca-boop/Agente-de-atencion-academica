@@ -178,7 +178,7 @@ El sistema no deberá:
 
 ---
 
-### RF-009 · Consultar causas de restricciones escolares
+### RF-009 · Consultar causas de restricción escolar
 
 | Campo | Contenido |
 |---|---|
@@ -190,7 +190,7 @@ El sistema no deberá:
 
 ---
 
-### RF-010 · Actualizar información académica
+### RF-010 · Modificar información académica
 
 | Campo | Contenido |
 |---|---|
@@ -271,8 +271,8 @@ El sistema no deberá:
 | CU-05 | Consultar información de un trámite | Alumno | RF-005, RF-006 |
 | CU-06 | Consultar calendario escolar | Alumno | RF-001, RF-007 |
 | CU-07 | Consultar restricciones escolares | Alumno | RF-001, RF-008 |
-| CU-08 | Consultar causas de restricciones escolares | Alumno | RF-008, RF-009 |
-| CU-09 | Actualizar información académica | Dirección de carrera | RF-010 |
+| CU-08 | Consultar causas de restricción escolar | Alumno | RF-008, RF-009 |
+| CU-09 | Modificar información académica | Dirección de carrera | RF-010 |
 
 ---
 
@@ -287,11 +287,11 @@ El sistema no deberá:
 - CU-05 · Consultar información de un trámite
 - CU-06 · Consultar calendario escolar
 - CU-07 · Consultar restricciones escolares
-- CU-08 · Consultar causas de restricciones escolares
+- CU-08 · Consultar causas de restricción escolar
 
 ### Actor Dirección de carrera
 
-- CU-09 · Actualizar información académica
+- CU-09 · Modificar información académica
 
 ---
 
