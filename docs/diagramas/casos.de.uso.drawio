@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="HZ-f4--OC9j_ZVbv4Oon">
+    <mxGraphModel dx="984" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#868686,#FFFFFF)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tk_ax8Fz9u1Mt6odmcmS-1" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=330;height=20;" value="Agente de atención Académica en Copilot" vertex="1">
+          <mxGeometry height="700" width="410" x="230" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="tk_ax8Fz9u1Mt6odmcmS-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Alumno" vertex="1">
+          <mxGeometry height="100" width="82" x="130" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="tk_ax8Fz9u1Mt6odmcmS-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Directora de carrera" vertex="1">
+          <mxGeometry height="100" width="60" x="710" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="tk_ax8Fz9u1Mt6odmcmS-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar materias disponibles" vertex="1">
+          <mxGeometry height="70" width="140" x="290" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="MtvNLUbnn0Vj_zojq6vi-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar información de una materia" vertex="1">
+          <mxGeometry height="70" width="140" x="290" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="MtvNLUbnn0Vj_zojq6vi-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar trámites disponibles" vertex="1">
+          <mxGeometry height="70" width="140" x="290" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="MtvNLUbnn0Vj_zojq6vi-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar información de un trámite" vertex="1">
+          <mxGeometry height="70" width="140" x="290" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="MtvNLUbnn0Vj_zojq6vi-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Modificar información académica" vertex="1">
+          <mxGeometry height="70" width="140" x="450" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="MtvNLUbnn0Vj_zojq6vi-18" edge="1" parent="1" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="tk_ax8Fz9u1Mt6odmcmS-4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="288" as="sourcePoint" />
+            <mxPoint x="360" y="288" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MtvNLUbnn0Vj_zojq6vi-22" edge="1" parent="1" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="MtvNLUbnn0Vj_zojq6vi-10" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="290" as="sourcePoint" />
+            <mxPoint x="330" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MtvNLUbnn0Vj_zojq6vi-25" edge="1" parent="1" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="MtvNLUbnn0Vj_zojq6vi-11" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="290" as="sourcePoint" />
+            <mxPoint x="230" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MtvNLUbnn0Vj_zojq6vi-28" edge="1" parent="1" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="MtvNLUbnn0Vj_zojq6vi-12" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="290" as="sourcePoint" />
+            <mxPoint x="180" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MtvNLUbnn0Vj_zojq6vi-34" edge="1" parent="1" source="tk_ax8Fz9u1Mt6odmcmS-3" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="MtvNLUbnn0Vj_zojq6vi-14" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="558" as="sourcePoint" />
+            <mxPoint x="750" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MtvNLUbnn0Vj_zojq6vi-37" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar calendario escolar" vertex="1">
+          <mxGeometry height="70" width="140" x="290" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="MtvNLUbnn0Vj_zojq6vi-38" edge="1" parent="1" source="tk_ax8Fz9u1Mt6odmcmS-2" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.482;exitY=0.708;exitDx=0;exitDy=0;exitPerimeter=0;" target="MtvNLUbnn0Vj_zojq6vi-37" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="510" as="sourcePoint" />
+            <mxPoint x="330" y="735" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X7dvsdz6zKFpV9784vrQ-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar prerrequisitos de una materia" vertex="1">
+          <mxGeometry height="70" width="140" x="290" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="X7dvsdz6zKFpV9784vrQ-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar restricciones escolares" vertex="1">
+          <mxGeometry height="70" width="140" x="300" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="X7dvsdz6zKFpV9784vrQ-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar causas de restricción escolar" vertex="1">
+          <mxGeometry height="70" width="140" x="300" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="X7dvsdz6zKFpV9784vrQ-4" edge="1" parent="1" source="tk_ax8Fz9u1Mt6odmcmS-2" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.527;exitY=0.614;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="X7dvsdz6zKFpV9784vrQ-2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="510" as="sourcePoint" />
+            <mxPoint x="520" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X7dvsdz6zKFpV9784vrQ-7" edge="1" parent="1" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="X7dvsdz6zKFpV9784vrQ-3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="300" as="sourcePoint" />
+            <mxPoint x="240" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
