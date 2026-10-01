@@ -17,7 +17,7 @@ El documento está dirigido al equipo encargado del desarrollo del agente y a la
 
 ## Alcance del sistema
 
-El sistema será un agente de Copilot integrado en el chat personal de Microsoft Teams de la directora de carrera de TI. El agente permitirá a los alumnos consultar información académica previamente proporcionada y aprobada por Dirección de carrera.
+El sistema será un agente de Copilot integrado en el chat personal de Microsoft Teams de la directora de carrera de TI. El agente permitirá a los alumnos consultar información académica previamente proporcionada y aprobada por Dirección de carrera por medio de mensajes de texto.
 
 El sistema deberá permitir:
 
@@ -68,14 +68,14 @@ El sistema no deberá:
 | ID | Nombre del requisito | Prioridad | Origen |
 |---|---|---|---|
 | RF-001 | Mostrar menú de servicios | Imprescindible | Visión del producto |
-| RF-002 | Consultar materias disponibles | Imprescindible | Visión del producto + entrevista |
-| RF-003 | Consultar información de una materia | Imprescindible | Visión del producto + entrevista |
-| RF-004 | Consultar prerrequisitos de una materia | Imprescindible | Entrevista |
-| RF-005 | Consultar trámites disponibles | Imprescindible | Visión del producto |
-| RF-006 | Consultar información de un trámite | Imprescindible | Visión del producto |
-| RF-007 | Consultar calendario escolar | Imprescindible | Visión del producto + entrevista |
-| RF-008 | Consultar restricciones escolares | Imprescindible | Visión del producto + entrevista |
-| RF-009 | Consultar causas de restricción escolar | Imprescindible | Entrevista |
+| RF-002 | Mostrar materias disponibles | Imprescindible | Visión del producto + entrevista |
+| RF-003 | Mostrar información de una materia | Imprescindible | Visión del producto + entrevista |
+| RF-004 | Mostrar prerrequisitos de una materia | Imprescindible | Entrevista |
+| RF-005 | Mostrar trámites disponibles | Imprescindible | Visión del producto |
+| RF-006 | Mostrar información de un trámite | Imprescindible | Visión del producto |
+| RF-007 | Mostrar calendario escolar | Imprescindible | Visión del producto + entrevista |
+| RF-008 | Mostrar restricciones escolares | Imprescindible | Visión del producto + entrevista |
+| RF-009 | Mostrar causas de restricción escolar | Imprescindible | Entrevista |
 | RF-010 | Modificar información académica | Imprescindible | Visión del producto |
 
 ---
@@ -94,98 +94,98 @@ El sistema no deberá:
 
 ---
 
-### RF-002 · Consultar materias disponibles
+### RF-002 · Mostrar materias disponibles
 
 | Campo | Contenido |
 |---|---|
 | **Descripción** | El sistema deberá mostrar las materias disponibles de la carrera correspondientes al semestre vigente. |
 | **Origen** | Visión del producto + entrevista |
 | **Prioridad** | Imprescindible |
-| **Criterios de aceptación** | • Al seleccionar la opción “Materias”, deberá mostrarse la información correspondiente al semestre vigente.<br>• Deberá mostrarse la lista de materias disponibles.<br>• Deberá mostrarse el horario correspondiente a cada materia cuando dicha información se encuentre disponible.<br>• Deberá mostrarse el profesor correspondiente a cada materia cuando dicha información se encuentre disponible. |
+| **Criterios de aceptación** | • Al usuario escribir la opción “Materias”, deberá mostrarse la información correspondiente al semestre vigente.<br>• Deberá mostrarse la lista de materias disponibles.<br>• Deberá mostrarse el horario correspondiente a cada materia cuando dicha información se encuentre disponible.<br>• Deberá mostrarse el profesor correspondiente a cada materia cuando dicha información se encuentre disponible. |
 | **Relacionado con** | RF-001, RF-003, RF-004, RNF-CON-001 |
 
 ---
 
-### RF-003 · Consultar información de una materia
+### RF-003 · Mostrar información de una materia
 
 | Campo | Contenido |
 |---|---|
 | **Descripción** | El sistema deberá mostrar información descriptiva sobre la materia seleccionada. |
 | **Origen** | Visión del producto + entrevista |
 | **Prioridad** | Imprescindible |
-| **Criterios de aceptación** | • El alumno deberá poder seleccionar una materia disponible.<br>• El sistema deberá mostrar qué es la materia seleccionada.<br>• El sistema deberá mostrar para qué sirve la materia seleccionada.<br>• La información mostrada deberá corresponder con la información académica autorizada. |
+| **Criterios de aceptación** | • El alumno deberá poder escribir una materia disponible.<br>• El sistema deberá mostrar qué es la materia seleccionada.<br>• El sistema deberá mostrar para qué sirve la materia seleccionada.<br>• La información mostrada deberá corresponder con la información académica autorizada. |
 | **Relacionado con** | RF-002, RNF-CON-001 |
 
 ---
 
-### RF-004 · Consultar prerrequisitos de una materia
+### RF-004 ·Mostrar prerrequisitos de una materia
 
 | Campo | Contenido |
 |---|---|
 | **Descripción** | El sistema deberá mostrar los prerrequisitos establecidos para la materia seleccionada. |
 | **Origen** | Entrevista |
 | **Prioridad** | Imprescindible |
-| **Criterios de aceptación** | • El alumno deberá poder seleccionar una materia disponible.<br>• El sistema deberá identificar los prerrequisitos asociados a la materia seleccionada.<br>• El sistema deberá mostrar los prerrequisitos cuando la materia los tenga.<br>• El sistema deberá indicar cuando una materia no tenga prerrequisitos registrados. |
+| **Criterios de aceptación** | • El alumno deberá poder escribir una materia disponible.<br>• El sistema deberá identificar los prerrequisitos asociados a la materia seleccionada.<br>• El sistema deberá mostrar los prerrequisitos cuando la materia los tenga.<br>• El sistema deberá indicar cuando una materia no tenga prerrequisitos registrados. |
 | **Relacionado con** | RF-002, RNF-CON-001 |
 
 ---
 
-### RF-005 · Consultar trámites disponibles
+### RF-005 · Mostrar trámites disponibles
 
 | Campo | Contenido |
 |---|---|
 | **Descripción** | El sistema deberá mostrar la lista de trámites escolares autorizados por Dirección de carrera. |
 | **Origen** | Visión del producto |
 | **Prioridad** | Imprescindible |
-| **Criterios de aceptación** | • Al seleccionar la opción “Trámites y bajas”, deberá mostrarse la lista de trámites disponibles.<br>• La lista deberá contener únicamente trámites autorizados por Dirección de carrera.<br>• Cada trámite deberá poder ser seleccionado por el alumno para consultar su información. |
+| **Criterios de aceptación** | • Al escribir la opción “Trámites y bajas”, deberá mostrarse la lista de trámites disponibles.<br>• La lista deberá contener únicamente trámites autorizados por Dirección de carrera.<br>• Cada trámite deberá poder ser seleccionado por el alumno para consultar su información. |
 | **Relacionado con** | RF-001, RF-006, RNF-CON-001 |
 
 ---
 
-### RF-006 · Consultar información de un trámite
+### RF-006 · Mostrar información de un trámite
 
 | Campo | Contenido |
 |---|---|
 | **Descripción** | El sistema deberá mostrar la información general del trámite seleccionado. |
 | **Origen** | Visión del producto |
 | **Prioridad** | Imprescindible |
-| **Criterios de aceptación** | • El alumno deberá poder seleccionar un trámite disponible.<br>• El sistema deberá mostrar qué es el trámite.<br>• El sistema deberá mostrar para qué sirve el trámite.<br>• El sistema deberá mostrar qué información debe tener disponible el alumno.<br>• El sistema deberá indicar a quién debe contactar el alumno para obtener información más específica.<br>• El sistema deberá mostrar el mensaje “Si requieres información más específica contacta a tu directora de carrera”. |
+| **Criterios de aceptación** | • El alumno deberá poder escribir un trámite disponible.<br>• El sistema deberá mostrar qué es el trámite.<br>• El sistema deberá mostrar para qué sirve el trámite.<br>• El sistema deberá mostrar qué información debe tener disponible el alumno.<br>• El sistema deberá indicar a quién debe contactar el alumno para obtener información más específica.<br>• El sistema deberá mostrar el mensaje “Si requieres información más específica contacta a tu directora de carrera”. |
 | **Relacionado con** | RF-005, RNF-CON-001 |
 
 ---
 
-### RF-007 · Consultar calendario escolar
+### RF-007 · Mostrar calendario escolar
 
 | Campo | Contenido |
 |---|---|
 | **Descripción** | El sistema deberá mostrar el calendario escolar vigente utilizado por Dirección de carrera. |
 | **Origen** | Visión del producto + entrevista |
 | **Prioridad** | Imprescindible |
-| **Criterios de aceptación** | • Al seleccionar la opción correspondiente al calendario escolar, deberá mostrarse el calendario vigente.<br>• El calendario mostrado deberá corresponder con la información de la fuente oficial autorizada.<br>• El sistema no deberá mostrar como vigente un calendario que haya sido sustituido por una versión actualizada. |
+| **Criterios de aceptación** | • Al escribir la opción correspondiente al calendario escolar, deberá mostrarse el calendario vigente.<br>• El calendario mostrado deberá corresponder con la información de la fuente oficial autorizada.<br>• El sistema no deberá mostrar como vigente un calendario que haya sido sustituido por una versión actualizada. |
 | **Relacionado con** | RF-001, RF-010, RNF-CON-001 |
 
 ---
 
-### RF-008 · Consultar restricciones escolares
+### RF-008 · Mostrar restricciones escolares
 
 | Campo | Contenido |
 |---|---|
 | **Descripción** | El sistema deberá mostrar las restricciones escolares vigentes. |
 | **Origen** | Visión del producto + entrevista |
 | **Prioridad** | Imprescindible |
-| **Criterios de aceptación** | • Al seleccionar la opción correspondiente a las restricciones escolares, deberá mostrarse la lista de restricciones vigentes.<br>• El sistema deberá mostrar únicamente restricciones registradas como vigentes.<br>• La información mostrada deberá corresponder con la información autorizada por Dirección de carrera. |
+| **Criterios de aceptación** | • Al escribir la opción correspondiente a las restricciones escolares, deberá mostrarse la lista de restricciones vigentes.<br>• El sistema deberá mostrar únicamente restricciones registradas como vigentes.<br>• La información mostrada deberá corresponder con la información autorizada por Dirección de carrera. |
 | **Relacionado con** | RF-001, RF-009, RF-010, RNF-CON-001 |
 
 ---
 
-### RF-009 · Consultar causas de restricción escolar
+### RF-009 · Mostrar causas de restricción escolar
 
 | Campo | Contenido |
 |---|---|
 | **Descripción** | El sistema deberá mostrar la causa asociada a una restricción escolar cuando dicha información se encuentre disponible. |
 | **Origen** | Entrevista |
 | **Prioridad** | Imprescindible |
-| **Criterios de aceptación** | • El alumno deberá poder seleccionar una restricción escolar.<br>• El sistema deberá mostrar la causa asociada cuando se encuentre registrada.<br>• El sistema deberá indicar cuando no exista una causa registrada para la restricción seleccionada.<br>• La causa mostrada deberá corresponder con la información autorizada por Dirección de carrera. |
+| **Criterios de aceptación** | • El alumno deberá poder escribr una restricción escolar.<br>• El sistema deberá mostrar la causa asociada cuando se encuentre registrada.<br>• El sistema deberá indicar cuando no exista una causa registrada para la restricción seleccionada.<br>• La causa mostrada deberá corresponder con la información autorizada por Dirección de carrera. |
 | **Relacionado con** | RF-008, RF-010, RNF-CON-001 |
 
 ---
@@ -319,9 +319,9 @@ Obtener información general sobre un trámite escolar disponible.
 
 ### Escenario principal
 
-1. El alumno selecciona la opción “Trámites y bajas”.
+1. El alumno escribe la opción “Trámites y bajas”.
 2. El sistema muestra la lista de trámites disponibles.
-3. El alumno selecciona el trámite que desea consultar.
+3. El alumno escribe el trámite que desea consultar.
 4. El sistema identifica el trámite seleccionado.
 5. El sistema muestra qué es el trámite.
 6. El sistema muestra para qué sirve el trámite.
