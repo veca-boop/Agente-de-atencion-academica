@@ -353,7 +353,7 @@ Obtener información general sobre un trámite escolar disponible.
 
 RF-005, RF-006
 
-##Figma:https://www.figma.com/proto/SCYiz3nCxSqjktAWXtbIhz/Prototipo-Agente-de-atenci%C3%B3n-acad%C3%A9mica?node-id=1-5145&t=RD9Xxfk5GiKQwI9E-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A5145
+## Figma:https://www.figma.com/proto/SCYiz3nCxSqjktAWXtbIhz/Prototipo-Agente-de-atenci%C3%B3n-acad%C3%A9mica?node-id=1-5145&t=RD9Xxfk5GiKQwI9E-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A5145
 ---
 
 # 6. Trazabilidad
