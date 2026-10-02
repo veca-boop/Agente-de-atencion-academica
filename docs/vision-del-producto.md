@@ -7,7 +7,7 @@
 **Fecha de la última versión: 28 de septiembre de 2026**
 
 **Repositorio: 
-https://github.com/veca-boop/Agente-de-atencion-academica**
+https://github.com/veca-boop/Agente-de-atencion-academica.git**
 
 ---
 
