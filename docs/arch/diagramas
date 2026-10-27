@@ -1,0 +1,67 @@
+# Diagramas C4 — Agente de Atención Académica en Copilot
+  
+## 1. Diagrama de contexto
+
+  
+flowchart TD
+    alumno([Alumno])
+    directora([Directora de carrera])
+    teams[Microsoft Teams]
+    agente[Agente de Atención Académica en Copilot]
+
+    alumno -->|Realiza consultas académicas| teams
+    teams -->|Envía preguntas| agente
+    agente -->|Devuelve respuestas académicas| teams
+    directora -->|Proporciona y autoriza información| agente
+
+    style agente fill:#ff5d00,color:#fff
+      
+## 2. Diagrama de contenedores
+
+    
+flowchart TD
+    alumno([Alumno])
+    directora([Directora de carrera])
+
+    subgraph sistema["Agente de Atención Académica en Copilot"]
+        teams["Canal de conversación chat de<br/>Microsoft Teams"]
+        agente["Agente conversacional<br/>Microsoft Copilot Studio"]
+        datos[("Base de datos<br/>Información académica autorizada")]
+    end
+
+    alumno -->|Realiza consultas| teams
+    teams -->|Envía mensajes| agente
+    agente -->|Devuelve respuestas| teams
+    agente -->|Consulta información académica| datos
+    directora -->|Administra y actualiza información| datos
+
+    style agente fill:#ff5d00,color:#fff
+
+## 3. Diagrama de componentes
+      
+flowchart TD
+    alumno([Alumno])
+
+    subgraph agente["Agente de Atención Académica en Copilot"]
+        atencion["Atención y consultas"]
+        factory["Factory<br/>Selecciona la estrategia"]
+        strategy["Strategy<br/>Contrato para resolver consultas"]
+        academica["Información académica"]
+        tramites["Trámites y bajas"]
+        validacion["Validación y administración"]
+    end
+
+    datos[("Base de conocimiento académica")]
+
+    alumno -->|Realiza consulta| atencion
+    atencion -->|Clasifica la consulta| factory
+    factory -->|Selecciona estrategia| strategy
+    strategy -->|Consulta información académica| academica
+    strategy -->|Consulta requisitos y procedimientos| tramites
+    academica -->|Obtiene datos autorizados| datos
+    tramites -->|Obtiene requisitos oficiales| datos
+    validacion -->|Revisa y actualiza información| datos
+
+    style factory fill:#ff5d00,color:#fff
+
+      
