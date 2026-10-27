@@ -1,8 +1,8 @@
 # Diagramas C4 — Agente de Atención Académica en Copilot
-  
+
 ## 1. Diagrama de contexto
 
-  
+```mermaid
 flowchart TD
     alumno([Alumno])
     directora([Directora de carrera])
@@ -15,10 +15,11 @@ flowchart TD
     directora -->|Proporciona y autoriza información| agente
 
     style agente fill:#ff5d00,color:#fff
-      
+```
+
 ## 2. Diagrama de contenedores
 
-    
+```mermaid
 flowchart TD
     alumno([Alumno])
     directora([Directora de carrera])
@@ -36,9 +37,11 @@ flowchart TD
     directora -->|Administra y actualiza información| datos
 
     style agente fill:#ff5d00,color:#fff
+```
 
 ## 3. Diagrama de componentes
-      
+
+```mermaid
 flowchart TD
     alumno([Alumno])
 
@@ -63,5 +66,4 @@ flowchart TD
     validacion -->|Revisa y actualiza información| datos
 
     style factory fill:#ff5d00,color:#fff
-
-      
+```
