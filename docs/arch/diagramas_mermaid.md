@@ -43,7 +43,8 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    alumno([Alumno])
+    alumno([Canal de conversación chat de
+Microsoft Teams])
 
     subgraph agente["Agente de Atención Académica en Copilot"]
         atencion["Atención y consultas"]
