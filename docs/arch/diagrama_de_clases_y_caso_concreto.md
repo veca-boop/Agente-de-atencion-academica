@@ -220,34 +220,6 @@ De esta manera, ambos diagramas mantienen coherencia entre sí y constituyen una
 
 ---
 
-## 5. Diagrama de objetos
-  
-flowchart TB
-    subgraph Oferta_Academica["Oferta académica"]
-        D["docente1 : Docente<br/>nombre = Dra. Laura Méndez"]
-        M["materia1 : Materia<br/>codigo = RED3401<br/>nombre = Redes de Computadoras<br/>semestre = 5"]
-        H["horario1 : Horario<br/>dia = Lunes y miércoles<br/>horaInicio = 10:00<br/>horaFin = 11:30"]
-
-        D -->|imparte| M
-        M -->|tiene| H
-    end
-
-    subgraph Informacion_Escolar["Información escolar"]
-        T["tramite1 : Tramite<br/>nombre = Solicitud de beca escolar<br/>descripcion = Procedimiento para solicitar apoyo económico<br/>proposito = Obtener apoyo económico para estudios<br/>informacionRequerida = Solicitud y documentación comprobatoria<br/>contacto = Dirección de carrera"]
-
-        C["calendario1 : CalendarioEscolar<br/>periodo = Enero-Junio 2027<br/>fechaInicio = 2027-01-11<br/>fechaFin = 2027-06-25<br/>fuenteOficial = Calendario institucional"]
-
-        R["restriccion1 : RestriccionEscolar<br/>tipo = Requisito de inglés<br/>descripcion = Acreditación del requisito de idioma<br/>motivo = No cumplir con el nivel de inglés requerido"]
-    end
-
-    style D fill:#fff0e8,stroke:#ff6600,color:#333
-    style M fill:#fff0e8,stroke:#ff6600,color:#333
-    style H fill:#fff0e8,stroke:#ff6600,color:#333
-    style T fill:#fff0e8,stroke:#ff6600,color:#333
-    style C fill:#fff0e8,stroke:#ff6600,color:#333
-    style R fill:#fff0e8,stroke:#ff6600,color:#333
---- 
-
 ## Conclusión
 
 Mediante la elaboración del diagrama de clases se definieron las seis clases candidatas del Agente de Atención Académica en Copilot, especificando sus atributos, tipos de datos, operaciones y niveles de visibilidad.
