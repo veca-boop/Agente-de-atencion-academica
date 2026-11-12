@@ -16,6 +16,7 @@ Se seleccionó este caso de uso porque representa una de las funcionalidades pri
 
 El siguiente diagrama representa la interacción entre el alumno, Microsoft Teams, el agente y la clase Materia. Se contempla tanto el escenario en el que la información está disponible como aquel en el que no se encuentra.
 
+
 ```mermaid
 sequenceDiagram
     actor Alumno
@@ -32,19 +33,18 @@ sequenceDiagram
 
     alt La información está disponible
         Materia-->>Agente: Información de la materia
-        deactivate Materia
         Agente-->>Teams: Respuesta académica
-        deactivate Agente
-        Teams-->>Alumno: Muestra la información
-
     else La información no está disponible
         Materia-->>Agente: Información no encontrada
-        deactivate Materia
         Agente-->>Teams: Mensaje de indisponibilidad
-        deactivate Agente
-        Teams-->>Alumno: Informa que no hay datos disponibles
     end
+
+    deactivate Materia
+    deactivate Agente
+
+    Teams-->>Alumno: Muestra la respuesta correspondiente
 ```
+
 
 ### 3. Participantes y responsabilidades
 
