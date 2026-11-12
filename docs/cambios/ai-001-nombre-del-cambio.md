@@ -1,94 +1,56 @@
-# Análisis de impacto de SC-001
+# SC-001: Identificación de la fuente y fecha de actualización de información académica
 
-> Plantilla de análisis de impacto · Ingeniería de Software I · SIS3407
-> Guárdala en tu repositorio como `doc/cambios/ai-001-nombre-del-cambio.md`
-> Lo escribe **el dueño del sistema**, sobre la solicitud que le entregó su dupla.
+> Solicitud de cambio · Ingeniería de Software I · SIS3407
 
 ---
 
-## Solicitud que se analiza
+## Estado
 
-Referencia a la solicitud: `sc-001-nombre-del-cambio.md`, quién la pidió y
-en qué fecha.
+Propuesta · 12 de noviembre de 2026
 
-## Traducción a términos del sistema
+## Quién la pide
 
-La solicitud viene en palabras del solicitante. Aquí la traduces a lo que
-significa dentro de **tu** sistema, con los nombres que tú le pusiste a las
-cosas.
+**Solicitante:** [Nombre de tu compañero]  
+**Papel:** Dupla de revisión del sistema Agente de Atención Académica en Copilot.
 
-> Ejemplo. Lo pedido: "quiero que al dueño le llegue un aviso por WhatsApp".
-> Traducido: el componente Notificador necesita una implementación nueva de
-> la interfaz IEnviable que hable con un servicio de mensajería externo, y
-> la clase Dueño necesita un atributo para el número de teléfono.
+## Qué se pide
 
-Si no puedes traducirlo, no puedes estimarlo. Pregunta antes de seguir.
+Quiero que los alumnos puedan identificar de dónde proviene la información que proporciona el agente y cuándo fue actualizada por última vez. También quiero que, cuando no se disponga de una fecha de actualización, el agente lo indique para que los alumnos sepan que no es posible confirmar la vigencia de esa información.
 
-## Impacto directo
+## Por qué
 
-Lo que la solicitud toca **por definición**: lo que hay que modificar para
-que el cambio exista.
+Actualmente, el agente proporciona información académica utilizando fuentes autorizadas por la directora de carrera, pero no contempla mostrar al alumno la procedencia ni la fecha de actualización de los datos.
 
-| Artefacto | Unidad | Qué hay que cambiar |
-|---|---|---|
-| Requisito RF-xx | 2 | |
-| Caso de uso | 2 | |
-| Diagrama de clases | 4 | |
-| Diagrama de secuencia | 4 | |
+Esto puede generar incertidumbre al consultar información que cambia con el tiempo, como fechas del calendario escolar, horarios, requisitos de trámites y restricciones académicas. Mostrar estos datos permitiría mejorar la transparencia y confiabilidad de las respuestas.
 
-## Impacto indirecto
+## Qué pasa si no se hace
 
-Lo que se rompe o deja de ser cierto **por culpa del cambio directo**, aunque
-la solicitud no lo mencione. Esta sección es la que separa una estimación
-seria de una adivinanza, y es la que todo el mundo olvida.
+Los alumnos podrían utilizar información desactualizada sin darse cuenta, especialmente cuando existan modificaciones en fechas, procedimientos o requisitos académicos. Además, no tendrían una referencia clara para comprobar el origen de la información proporcionada por el agente, lo que podría generar confusiones y disminuir la confianza en el sistema.
 
-| Artefacto | Unidad | Por qué se ve afectado |
-|---|---|---|
-| Registro de decisión ADR-xx | 3 | |
-| Diagrama de contenedores C4 | 3 | |
-| Máquina de estados | 4 | |
+## Tipo de mantenimiento
 
-> Recorre la lista completa y escribe "sin impacto" donde no lo haya.
-> Un renglón vacío no distingue entre *lo revisé y no se toca* y
-> *se me olvidó revisarlo*.
+- [ ] **Correctivo** · algo está mal y hay que repararlo.
+- [ ] **Adaptativo** · el entorno cambió y hay que ajustarse.
+- [x] **Perfectivo** · funciona, pero puede ser mejor.
+- [ ] **Preventivo** · todavía no falla, pero va a fallar.
 
-## Lo que queda sin tocar
+**Justificación:** El sistema ya proporciona información académica, pero esta funcionalidad puede mejorarse al permitir que los alumnos conozcan la procedencia y fecha de actualización de las respuestas.
 
-Nómbralo explícitamente. Decir qué **no** se mueve es tan valioso como decir
-qué sí, porque acota el riesgo y permite que alguien más te corrija.
+## Criterio de aceptación
 
-## Riesgos
+1. El agente muestra la fuente institucional de la información proporcionada, cuando esta se encuentra identificada.
+2. Cuando la fuente dispone de una fecha de actualización, el agente muestra dicha fecha junto con la respuesta.
+3. Cuando no existe una fecha de actualización disponible, el agente informa que no puede confirmar cuándo fue actualizada la información.
+4. La información proporcionada continúa utilizando exclusivamente fuentes académicas autorizadas.
+5. La consulta de la fuente y su fecha de actualización no modifica la información académica original.
+6. La fuente y fecha mostradas corresponden a los datos utilizados para generar la respuesta.
 
-Qué podría salir mal al hacer este cambio, y qué tan probable es. Incluye
-los riesgos de no hacerlo si los hay.
+## Prioridad que sugiere el solicitante
 
-## Alternativas consideradas
+**Media.**
 
-Casi siempre hay más de una forma de resolver una solicitud. Escribe al menos
-dos y di por cuál te inclinas:
-
-1. **<Opción A>** · qué implica, qué cuesta, qué deja pendiente.
-2. **<Opción B>** · lo mismo.
-
-## Estimación de esfuerzo
-
-| Concepto | Esfuerzo |
-|---|---|
-| Cambios de diseño y documentación | |
-| Implementación | |
-| Pruebas | |
-| **Total** | |
-
-**De dónde sale este número.** Explica el criterio: con qué lo comparaste,
-qué supusiste, qué no incluiste. Una estimación sin su razonamiento no se
-puede discutir ni corregir, y por lo tanto no sirve.
-
-## Recomendación
-
-Aceptar, rechazar o aplazar, **y por qué**. Si recomiendas aplazar, di qué
-tendría que ocurrir para retomarlo.
+El cambio mejoraría la transparencia y confiabilidad de las respuestas, especialmente en consultas sobre información que puede modificarse durante el ciclo escolar. Sin embargo, su ausencia no impide que el agente continúe proporcionando información académica.
 
 ---
 
-*El objetivo de este documento no es dar un número exacto. Es que cualquiera
-pueda seguir tu razonamiento y señalarte dónde te equivocaste.*
+*La solicitud describe qué se quiere, nunca cómo hacerlo. El cómo se decide en el análisis de impacto, y lo decide quien conoce el diseño.*
