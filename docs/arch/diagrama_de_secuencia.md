@@ -24,16 +24,24 @@ sequenceDiagram
     participant Materia
 
     Alumno->>Teams: Pregunta por una materia
-    Teams->>+Agente: enviarConsulta(consulta)
-    Agente->>+Materia: consultarInformacion(codigo)
+    Teams->>Agente: enviarConsulta(consulta)
+    activate Agente
+
+    Agente->>Materia: consultarInformacion(codigo)
+    activate Materia
 
     alt La información está disponible
-        Materia-->>-Agente: Información de la materia
-        Agente-->>-Teams: Respuesta académica
+        Materia-->>Agente: Información de la materia
+        deactivate Materia
+        Agente-->>Teams: Respuesta académica
+        deactivate Agente
         Teams-->>Alumno: Muestra la información
+
     else La información no está disponible
-        Materia-->>-Agente: Información no encontrada
-        Agente-->>-Teams: Mensaje de indisponibilidad
+        Materia-->>Agente: Información no encontrada
+        deactivate Materia
+        Agente-->>Teams: Mensaje de indisponibilidad
+        deactivate Agente
         Teams-->>Alumno: Informa que no hay datos disponibles
     end
 ```
