@@ -73,9 +73,7 @@ Esta modificación permitirá relacionar la consulta con el código de la materi
 
 ### 5. Trazabilidad con el diagrama de casos de uso
 
-El escenario representado corresponde al caso de uso **Consultar información de una materia**, incluido en el diagrama de casos de uso de la Unidad 2.
-
-Por lo tanto, el diagrama de secuencia mantiene la trazabilidad con una funcionalidad previamente definida para el sistema.
+El escenario representado corresponde al caso de uso **Consultar información de una materia**, incluido en el diagrama de casos de uso de la Unidad 2. Por lo tanto, el diagrama de secuencia mantiene la trazabilidad con una funcionalidad previamente definida para el sistema.
 
 ### 6. Conclusión
 
