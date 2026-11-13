@@ -10,7 +10,7 @@ Propuesta · 12 de noviembre de 2026
 
 ## Quién la pide
 
-**Solicitante:** [Nombre de tu compañero]  
+**Solicitante:** Julián Guerrero Martínez
 **Papel:** Dupla de revisión del sistema Agente de Atención Académica en Copilot.
 
 ## Qué se pide
