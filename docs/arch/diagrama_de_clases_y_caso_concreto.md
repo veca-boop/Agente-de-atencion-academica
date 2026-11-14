@@ -13,7 +13,7 @@ A partir de las seis clases candidatas identificadas en la actividad anterior, s
 
 | Clase | Atributos | Operaciones |
 |---|---|---|
-| Materia | codigo: String, nombre: String, semestre: int | consultarInformacion(): String, obtenerHorarios(): List<Horario> |
+| Materia | codigo: String, nombre: String, semestre: int | consultarInformacion(codigo: String): String, obtenerHorarios(): List<Horario> |
 | Docente | nombre: String | consultarMaterias(semestre: int): List<Materia> |
 | Horario | dia: String, horaInicio: Time, horaFin: Time | obtenerHorario(): String |
 | Tramite | nombre: String, descripcion: String, proposito: String, informacionRequerida: String, contacto: String | consultarInformacionGeneral(): String |
@@ -44,7 +44,7 @@ classDiagram
         -codigo: String
         -nombre: String
         -semestre: int
-        +consultarInformacion(): String
+        +consultarInformacion(codigo: String): String
         +obtenerHorarios(): List~Horario~
     }
 
@@ -226,8 +226,6 @@ Mediante la elaboración del diagrama de clases se definieron las seis clases ca
 
 También se establecieron las relaciones de asociación y sus respectivas multiplicidades, evitando utilizar relaciones de composición, agregación o herencia sin una justificación dentro del dominio del sistema.
 
-Posteriormente, se elaboró un diagrama de objetos con información ficticia para comprobar que el modelo puede representar un escenario realista de consulta académica.
+El diagrama de objetos permitió representar instancias concretas de las seis clases y comprobar que sus atributos y relaciones corresponden con la estructura definida.
 
-La validación permitió verificar que las instancias respetan la estructura, los atributos y las relaciones definidas en el diagrama de clases.
-
-Este trabajo constituye una base para continuar con el diseño orientado a objetos y desarrollar los siguientes diagramas UML del proyecto.
+Finalmente, se ajustó la operación `consultarInformacion(codigo: String)` de la clase `Materia` para mantener la correspondencia con el mensaje utilizado en el diagrama de secuencia, reforzando la consistencia entre los modelos elaborados.
